@@ -1,0 +1,100 @@
+/* Variaveis css */
+:root {
+    --cor_fonte: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+main {
+    background-image: url("./img/BG.png");
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20vh;
+    flex-direction: column;
+}
+
+section {
+    height: 550px;
+    max-width: 1200px;
+    width: 90%;
+    background: linear-gradient(270deg, rgba(248, 248, 248, 0.3) 58.85%, rgba(255, 255, 255, 0.15) 100%);
+    border: 1px solid #FBFEFB;
+    box-shadow: 0px 0px 100px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12.5px);
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    color: var(--cor_fonte);
+}
+
+.centro {
+    width: 500px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 0;
+}
+
+.titulo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 74px;
+}
+
+.frase {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    font-size: 28px;
+    font-weight: 500;  
+}
+
+cite {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.voltamos {
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* .logo {
+    width: 100vw;
+    background-color: red;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-end;
+} */
+
+/* Responsividade */
+
+@media screen and (max-width: 600px) {
+    .titulo {
+        font-size: 50px;
+    }
+
+    .frase {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        max-width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .titulo {
+        font-size: 44px;
+    }
+}
